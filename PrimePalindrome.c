@@ -37,6 +37,7 @@ int main()
         if(check1==1 && check2==1)
         printf("%d\n", i);
     }
-    printf("Bhoj is here");
+    printf("Bhoj is horny");
 
 }
+
