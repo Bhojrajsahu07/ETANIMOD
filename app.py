@@ -77,3 +77,9 @@ if uploaded_file is not None:
                 file_name='predictions.csv',
                 mime='text/csv',
             )
+
+
+#To create a fine tune classifier for streamlit to store all model weights + tokenizer
+model_path='./finetuned_classifier'
+tokenizer = AutoTokenizer.from_pretrained(model_path)
+model = AutoModelForSequenceClassification.from_pretrained(model_path)
