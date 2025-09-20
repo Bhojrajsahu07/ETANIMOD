@@ -1,4 +1,7 @@
 pandas
 streamlit
+torch
 transformers
+datasets
 scikit-learn
+sentencepiece
