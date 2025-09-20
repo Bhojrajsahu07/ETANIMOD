@@ -25,7 +25,7 @@ The final model performance will be evaluated using the **F1-score for the posit
 - **Transformer-based**: Fine-tuned on domain-specific e-commerce data
 - **High Accuracy**: Optimized for F1-score on positive class
 - **Production Ready**: Saved model can be directly deployed
-- **Easy Integration**: Streamlit UI for demo and testing
+- **Easy Integration**: Streamlit UI for demo and testing  
 
 
 - ## Solution Approach
