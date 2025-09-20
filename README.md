@@ -4,6 +4,19 @@
 
 E-commerce platforms operating globally face a critical challenge: accurately mapping user search queries in 20+ languages to English product categories. This mismatch leads to poor search relevance for non-English speakers, lost revenue from failed product discovery, and frustrated customers abandoning carts.
 
+## Problem Understanding  
+
+E-commerce search engines need to map user queries (e.g., *"red running shoes"*) to the correct product category (e.g., *Sportswear → Footwear → Running Shoes*) to deliver relevant results quickly.  
+
+This project tackles the problem as a **binary classification task** where the model predicts if a given query–category pair is:  
+- **1 → Relevant**  
+- **0 → Not Relevant**  
+
+A key challenge is the **multilingual nature** of the data. The model must perform well not only on languages seen during training (like **English, French, Spanish, Korean, Portuguese, Japanese**) but also generalize to **unseen languages** (like **German, Italian, Polish, Arabic**) in the test set.  
+
+The final model performance will be evaluated using the **F1-score for the positive class (Relevant)**.  
+
+
 **Our Solution**: A fine-tuned multilingual transformer model that understands search intent across languages and maps queries to the right product categories with high accuracy.
 
 ## Key Features
@@ -14,9 +27,19 @@ E-commerce platforms operating globally face a critical challenge: accurately ma
 - **Production Ready**: Saved model can be directly deployed
 - **Easy Integration**: Streamlit UI for demo and testing
 
-## Setup and Execution
+- ## 🚀 Solution Approach
 
-### 1. Install Dependencies
-Create a virtual environment and run:
-```bash
-pip install -r requirements.txt
+Our approach centers on fine-tuning a pre-trained multilingual transformer model to understand the semantic relationship between search queries and category paths.
+
+1.  **Model Selection**: We chose **`distilbert-base-multilingual-cased`**. This model is ideal for the task because:
+    * It has been pre-trained on a large corpus of languages, giving it a strong foundation for understanding the provided languages.
+    * [cite_start]Its multilingual nature allows it to generalize well to the languages that are not present in the training set (a zero-shot learning scenario).
+    * It is a "distilled" version of BERT, offering a great balance between high performance and computational efficiency, which is crucial for faster training and inference in a hackathon setting.
+
+2.  **Input Formulation**: To enable the model to compare the query and the category path, we concatenate them into a single string, separated by a special `[SEP]` token. This format (`query [SEP] category_path`) is standard for sentence-pair classification tasks and helps the model's attention mechanism learn the relationship between the two text segments.
+
+3.  **Training**: We use the Hugging Face `transformers` and `datasets` libraries for a robust training pipeline.
+    * The provided training data is split into a 90% training set and a 10% validation set to monitor performance and prevent overfitting.
+    * The `Trainer` API handles the fine-tuning process, with evaluation performed at the end of each epoch to save the best-performing model checkpoint.
+
+4.  [cite_start]**Inference & Deployment**: A user-friendly web application is built using **Streamlit** as required for Phase 1[cite: 30]. [cite_start]This demo allows for easy uploading of the test set, running inference, displaying results, and downloading the predictions in the required format[cite: 32, 33, 34, 35].
