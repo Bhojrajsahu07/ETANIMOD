@@ -65,6 +65,16 @@ Follow these steps to set up the environment and run the code.
 git clone <your-repo-url>
 cd <your-repo-name>
 
+### REFERENCES :
+## 🤖 AI Models Used
+
+| Model            | Description                   |
+|------------------|-------------------------------|
+| Gemini 2.5 Pro   | Google’s multimodal LLM       |
+| Perplexity       | AI-powered search + reasoning |
+| GPT-5            | OpenAI’s advanced LLM         |
+
+
 
 
 
