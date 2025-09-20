@@ -44,6 +44,8 @@ Our approach centers on fine-tuning a pre-trained multilingual transformer model
 
 4.  **Inference & Deployment**: A user-friendly web application is built using **Streamlit** as required for Phase . This demo allows for easy uploading of the test set, running inference, displaying results, and downloading the predictions in the required format.
 
+---
+
 ## Repository Structure
 ├── finetuned_classifier/   # Directory where the trained model and tokenizer are saved
 ├── data/                   # (Optional) Placeholder for training/test data
