@@ -66,7 +66,7 @@ git clone <your-repo-url>
 cd <your-repo-name>
 
 ### REFERENCES :
-## AI Models Used
+## 🤖 AI Models Used
 
 | Model            | Description                   |
 |------------------|-------------------------------|
