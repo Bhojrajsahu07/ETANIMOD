@@ -71,7 +71,7 @@ cd <your-repo-name>
 | Model            | Description                   |
 |------------------|-------------------------------|
 | Gemini 2.5 Pro   | Google’s multimodal LLM       |
-| Claude       | AI-powered search + reasoning |
+| Claude       | Anthropic's LLM |
 | GPT-5            | OpenAI’s advanced LLM         |
 
 
