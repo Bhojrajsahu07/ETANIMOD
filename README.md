@@ -27,13 +27,13 @@ The final model performance will be evaluated using the **F1-score for the posit
 - **Production Ready**: Saved model can be directly deployed
 - **Easy Integration**: Streamlit UI for demo and testing
 
-- ## 🚀 Solution Approach
+- ## Solution Approach
 
 Our approach centers on fine-tuning a pre-trained multilingual transformer model to understand the semantic relationship between search queries and category paths.
 
 1.  **Model Selection**: We chose **`distilbert-base-multilingual-cased`**. This model is ideal for the task because:
     * It has been pre-trained on a large corpus of languages, giving it a strong foundation for understanding the provided languages.
-    * [cite_start]Its multilingual nature allows it to generalize well to the languages that are not present in the training set (a zero-shot learning scenario).
+    * Its multilingual nature allows it to generalize well to the languages that are not present in the training set (a zero-shot learning scenario).
     * It is a "distilled" version of BERT, offering a great balance between high performance and computational efficiency, which is crucial for faster training and inference in a hackathon setting.
 
 2.  **Input Formulation**: To enable the model to compare the query and the category path, we concatenate them into a single string, separated by a special `[SEP]` token. This format (`query [SEP] category_path`) is standard for sentence-pair classification tasks and helps the model's attention mechanism learn the relationship between the two text segments.
@@ -42,4 +42,4 @@ Our approach centers on fine-tuning a pre-trained multilingual transformer model
     * The provided training data is split into a 90% training set and a 10% validation set to monitor performance and prevent overfitting.
     * The `Trainer` API handles the fine-tuning process, with evaluation performed at the end of each epoch to save the best-performing model checkpoint.
 
-4.  [cite_start]**Inference & Deployment**: A user-friendly web application is built using **Streamlit** as required for Phase 1[cite: 30]. [cite_start]This demo allows for easy uploading of the test set, running inference, displaying results, and downloading the predictions in the required format[cite: 32, 33, 34, 35].
+4.  **Inference & Deployment**: A user-friendly web application is built using **Streamlit** as required for Phase . This demo allows for easy uploading of the test set, running inference, displaying results, and downloading the predictions in the required format.
