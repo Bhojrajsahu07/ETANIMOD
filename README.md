@@ -47,6 +47,7 @@ Our approach centers on fine-tuning a pre-trained multilingual transformer model
 ---
 
 ## Repository Structure
+.
 ├── finetuned_classifier/   # Directory where the trained model and tokenizer are saved
 ├── data/                   # (Optional) Placeholder for training/test data
 ├── app.py                  # Streamlit application for inference and demo
