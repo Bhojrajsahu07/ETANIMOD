@@ -1,7 +1,7 @@
-pandas
-streamlit
-torch
-transformers
-datasets
-scikit-learn
-sentencepiece
+pandas==2.3.2
+streamlit==1.49
+torch==2.80
+transformers==4.49
+datasets==4.1.1
+scikit-learn==1.7.2
+sentencepiece==0.1.98
