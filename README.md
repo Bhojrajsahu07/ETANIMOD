@@ -73,6 +73,7 @@ cd <your-repo-name>
 | Gemini 2.5 Pro   | Google’s multimodal LLM       |
 | Claude       | Anthropic's LLM |
 | GPT-5            | OpenAI’s advanced LLM         |
+| Gamma AI      | Presentation Preparation  |
 
 
 
