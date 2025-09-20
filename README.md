@@ -97,7 +97,7 @@ cd <your-repo-name>
 ##  Team Contact
 
 * **Team Name:** ETANIMOD
-* **Members:** Bhojraj Sahu, Utkarsh Gupta, Prakhar Yadav, Ayush Mishra
+* **Members:** Bhojraj Sahu, Utkarsh Gupta, Prakhar Yadav
 * **Hackathon:** Confluentia Hackathon 2025
 
 ---
