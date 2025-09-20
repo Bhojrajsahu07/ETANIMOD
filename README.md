@@ -27,6 +27,7 @@ The final model performance will be evaluated using the **F1-score for the posit
 - **Production Ready**: Saved model can be directly deployed
 - **Easy Integration**: Streamlit UI for demo and testing
 
+
 - ## Solution Approach
 
 Our approach centers on fine-tuning a pre-trained multilingual transformer model to understand the semantic relationship between search queries and category paths.
