@@ -43,3 +43,48 @@ Our approach centers on fine-tuning a pre-trained multilingual transformer model
     * The `Trainer` API handles the fine-tuning process, with evaluation performed at the end of each epoch to save the best-performing model checkpoint.
 
 4.  **Inference & Deployment**: A user-friendly web application is built using **Streamlit** as required for Phase . This demo allows for easy uploading of the test set, running inference, displaying results, and downloading the predictions in the required format.
+
+## Repository Structure
+├── finetuned_classifier/   # Directory where the trained model and tokenizer are saved
+├── data/                   # (Optional) Placeholder for training/test data
+├── app.py                  # Streamlit application for inference and demo
+├── train.py                # Script for fine-tuning the model
+├── requirements.txt        # Python dependencies for the project
+└── README.md               # This file
+
+
+---
+
+## ⚙️ Setup and Instructions
+
+Follow these steps to set up the environment and run the code.
+
+### 1. Clone the Repository
+git clone <your-repo-url>
+cd <your-repo-name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+##  Team Contact
+
+* **Team Name:** ETANIMOD
+* **Members:** Bhojraj Sahu, Utkarsh Gupta, Prakhar Yadav, Ayush Mishra
+* **Hackathon:** Confluentia Hackathon 2025
+
+---
