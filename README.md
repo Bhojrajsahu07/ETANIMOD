@@ -48,6 +48,32 @@ etanimod-query-relevance/
 └── data/                # Dataset directory (not included)
 ```
 
+## ⚠️ Important Note: Model Files & Deployment
+
+Due to GitHub's 2GB repository size limit, we are unable to host the trained model files directly in this repository. 
+
+**Model Access:**
+- The fine-tuned model files are hosted on Google Drive
+- The link to access the model files has been shared with the hackathon mentors
+- For local deployment, download the `finetuned_classifier` folder from the provided Google Drive link and place it in the project root directory
+
+**For Mentors/Judges:**
+- Please check the shared Google Drive link for the complete model files
+- The `finetuned_classifier` folder should be downloaded and placed in the same directory as `app.py`
+- We will be running the Streamlit app locally during the demo due to these size constraints
+- **The provided Google Drive link contains all necessary files to run the application on your systems**
+- Simply download the model folder, place it in the project directory, and run `streamlit run app.py`
+
+**Demo Setup:**
+1. Clone this repository
+2. Download the `finetuned_classifier` folder from the shared Google Drive link
+3. Place the folder in the project root directory
+4. Install requirements: `pip install -r requirements.txt`
+5. Run the app: `streamlit run app.py`
+
+This ensures full reproducibility and allows mentors to test the solution independently on their own machines.
+
+
 ## 🚦 Getting Started
 
 ### Prerequisites
