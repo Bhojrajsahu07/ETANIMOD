@@ -27,7 +27,7 @@ E-commerce platforms need to accurately map user search queries (e.g., "red runn
 ### Model
 - **Base Model**: DistilBERT Multilingual Cased
 - **Architecture**: Fine-tuned for sequence classification with 2 output classes
-- **Training Data**: 300,000 labeled samples across 6 languages
+- **Training Data**: ~21,000 labeled samples across 6 languages
 - **Evaluation Metric**: F1-score on positive class
 
 ### Tech Stack
