@@ -156,7 +156,18 @@ Expected performance varies by language, with training languages (en, fr, es, ko
 2. **Model Selection**: DistilBERT Multilingual for efficiency and multilingual capability
 3. **Fine-tuning**: Train on 30K samples with 90/10 train-validation split
 4. **Inference**: Batch processing with optimized batch sizes
-5. **UI/UX**: Clean, intuitive Streamlit interface for accessibility
+5. **UI/UX**: Clean, intuitive Streamlit interface for accessibility  
+
+## 🤖 AI Tools Used
+
+| AI Tool | Purpose | Description |
+|---------|---------|-------------|
+| **Claude (Anthropic)** | Code Development & Documentation | Advanced AI assistant used for code optimization, debugging, and creating comprehensive documentation including this README |
+| **ChatGPT (OpenAI)** | Problem Analysis & Solution Design | Used for brainstorming solution approaches, analyzing the problem statement, and generating initial code structures |
+| **Gemini Pro (Google)** | Model Architecture Research | Leveraged for researching optimal model architectures for multilingual text classification and performance optimization strategies |
+| **Gamma.app** | Presentation Creation | AI-powered presentation tool used to create the 5-slide deck for Phase 2 deliverables with professional design and layout |
+
+These AI tools were used to enhance our development process while all core implementation, model training, and system design decisions were made by Team ETANIMOD.
 
 ## 🤝 Team ETANIMOD
 Bhojraj Sahu, Utkarsh Gupta, Prakhar Yadav
