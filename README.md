@@ -99,7 +99,7 @@ pip install -r requirements.txt
 To train the model on your dataset:
 
 ```bash
-python train.py --train_csv path/to/train.csv 
+python train.py --train_csv train.csv  
 ```
 
 Arguments:
