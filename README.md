@@ -150,13 +150,45 @@ F1 = (2 × Precision × Recall) / (Precision + Recall)
 
 Expected performance varies by language, with training languages (en, fr, es, ko, pt, ja) typically achieving higher scores than zero-shot languages (de, it, pl, ar).
 
-## 💡 Solution Approach
+Looking at the README I provided, I did mention DistilBERT Multilingual Cased in the Technical Architecture section, but I didn't explicitly highlight the transfer learning technique. Let me add a more detailed section about the technical approach:
 
-1. **Data Preprocessing**: Concatenate query and category with [SEP] token
-2. **Model Selection**: DistilBERT Multilingual for efficiency and multilingual capability
-3. **Fine-tuning**: Train on 30K samples with 90/10 train-validation split
-4. **Inference**: Batch processing with optimized batch sizes
-5. **UI/UX**: Clean, intuitive Streamlit interface for accessibility  
+## 💡 Solution Approach & Techniques
+
+### Transfer Learning Strategy
+We leveraged **transfer learning** to solve this multilingual classification task efficiently:
+
+1. **Pre-trained Model**: Started with `distilbert-base-multilingual-cased`
+   - Pre-trained on 104 languages with Wikipedia data
+   - 66M parameters (40% smaller than BERT-base)
+   - Maintains 97% of BERT's performance while being faster
+
+2. **Fine-tuning Process**:
+   - Added a classification head on top of DistilBERT
+   - Fine-tuned the entire model on our domain-specific e-commerce data
+   - This allows the model to adapt from general language understanding to query-category relevance
+
+3. **Why Transfer Learning?**
+   - **Multilingual Understanding**: Pre-trained model already understands 104 languages
+   - **Zero-shot Capability**: Can handle languages not in training data (German, Italian, Polish, Arabic)
+   - **Efficiency**: Requires less training data and time compared to training from scratch
+   - **Better Performance**: Leverages knowledge from massive pre-training corpus
+
+### Model Architecture Details
+```
+Input: Query + [SEP] + Category Path
+    ↓
+DistilBERT Multilingual (distilbert-base-multilingual-cased)
+    ↓
+Pooled Output (768 dimensions)
+    ↓
+Classification Head (Linear + Dropout)
+    ↓
+Output: Binary Classification (Relevant/Not Relevant)
+```
+
+This transfer learning approach allows us to achieve strong performance across all 10 languages while only training on 6 languages.  
+
+
 
 ## 🤖 AI Tools Used
 
