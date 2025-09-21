@@ -154,7 +154,7 @@ Expected performance varies by language, with training languages (en, fr, es, ko
 
 1. **Data Preprocessing**: Concatenate query and category with [SEP] token
 2. **Model Selection**: DistilBERT Multilingual for efficiency and multilingual capability
-3. **Fine-tuning**: Train on 300K samples with 90/10 train-validation split
+3. **Fine-tuning**: Train on 30K samples with 90/10 train-validation split
 4. **Inference**: Batch processing with optimized batch sizes
 5. **UI/UX**: Clean, intuitive Streamlit interface for accessibility
 
