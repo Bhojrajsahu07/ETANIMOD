@@ -99,7 +99,7 @@ pip install -r requirements.txt
 To train the model on your dataset:
 
 ```bash
-python train.py --train_csv path/to/train.csv --epochs 3 --batch_size 16
+python train.py --train_csv path/to/train.csv 
 ```
 
 Arguments:
@@ -108,7 +108,7 @@ Arguments:
 - `--output_dir`: Directory for checkpoints (default: ./results)
 - `--model_save_path`: Final model save directory (default: ./finetuned_classifier)
 - `--epochs`: Number of training epochs (default: 1)
-- `--batch_size`: Training batch size (default: 16)
+
 
 ### Running the Application
 
