@@ -202,7 +202,7 @@ This transfer learning approach allows us to achieve strong performance across a
 These AI tools were used to enhance our development process while all core implementation, model training, and system design decisions were made by Team ETANIMOD.
 
 ## 🤝 Team ETANIMOD
-Bhojraj Sahu, Utkarsh Gupta, Prakhar Yadav
+Bhojraj Sahu, Utkarsh Gupta, Prakhar Yadav,Ayush Mishra
 
 
 ## GOOGLE DRIVE LINK FOR ALL THE FILES INCLUDING ALL THE TRAINED LLM AND DATASETS
