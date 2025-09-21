@@ -203,3 +203,14 @@ These AI tools were used to enhance our development process while all core imple
 
 ## 🤝 Team ETANIMOD
 Bhojraj Sahu, Utkarsh Gupta, Prakhar Yadav
+
+
+##GOOGLE DRIVE LINK FOR ALL THE FILES INCLUDING ALL THE TRAINED LLM AND DATASETS
+https://drive.google.com/drive/folders/1iVVWXx490fuZALKFIOAYwbHT9ZAFwv6c?usp=drive_link
+
+
+##WORKING MVP LINK (ONLY ACCESSIBLE WHEN HOST IS HOSTING THE PROGRAM LOCALLY THROUGH STREAMLIT)
+http://172.16.132.128:8501
+NOTE-The link might change depending on hosts network connection as ip address may change here IIT BHU wifi has been used
+
+
